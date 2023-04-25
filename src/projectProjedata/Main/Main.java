@@ -1,4 +1,4 @@
-package projectProjedata;
+package projectProjedata.Main;
 
 import java.math.BigDecimal;
 import java.math.RoundingMode;
@@ -7,6 +7,9 @@ import java.time.LocalDate;
 import java.time.Month;
 import java.util.*;
 import java.util.stream.Collectors;
+
+import projectProjedata.Classes.Funcionario;
+import projectProjedata.Classes.Pessoa;
 
 public class Main {
     public static void main(String[] args) {
