@@ -59,7 +59,8 @@ public class Main {
     }
 
     private static void removeEmployee(LinkedList<Funcionario> listaDeFuncionarios) {
-        listaDeFuncionarios.removeIf(funcionario -> Objects.equals(funcionario.getName(), "João"));
+        String deleteName = "João";
+        listaDeFuncionarios.removeIf(funcionario -> Objects.equals(funcionario.getName(), deleteName));
     }
 
     private static void printListOfEmployees(LinkedList<Funcionario> listaDeFuncionarios) {
@@ -71,7 +72,6 @@ public class Main {
     }
 
     private static void applySalaryIncrease(LinkedList<Funcionario> listaDeFuncionarios) {
-
         for (Funcionario listaDeFuncionario : listaDeFuncionarios) {
             listaDeFuncionario.setSalary(listaDeFuncionario.getSalary().multiply(BigDecimal.valueOf(1.1)));
         }
